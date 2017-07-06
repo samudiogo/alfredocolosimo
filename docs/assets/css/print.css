@@ -46,7 +46,7 @@ fonte: https://tableless.com.br/dicas-de-css-para-impressao/
     a:visited {
         text-decoration: underline;
     }
-    a:link:after,
+    /*a:link:after,
     a:visited:after {
         content: " (" attr(href) ") ";
     }
@@ -54,7 +54,7 @@ fonte: https://tableless.com.br/dicas-de-css-para-impressao/
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
         content: "";
-    }
+    }*/
     p a {
         word-wrap: break-word;
     }
