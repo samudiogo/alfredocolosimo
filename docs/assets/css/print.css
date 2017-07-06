@@ -1,0 +1,33 @@
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        text-shadow: none !important;
+        filter: none !important;
+        -ms-filter: none !important;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        line-height: 1.4em;
+    }
+    nav,
+    footer,
+    video,
+    audio,
+    object,
+    embed {
+        display: none;
+    }
+    @page {
+        margin: 0.5cm;
+    }
+    h1::first-letter,
+    h2::first-letter,
+    h3::first-letter,
+    h4::first-letter,
+    h5::first-letter,
+    h6::first-letter {
+        margin-top: 0;
+    }
+}
