@@ -4,6 +4,9 @@ fonte: https://tableless.com.br/dicas-de-css-para-impressao/
 **/
 
 @media print {
+    .container {
+        width: auto;
+    }
     * {
         background: transparent !important;
         color: #000 !important;
