@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>SoundManager 2: Bar UI Player (prototype)</title>
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <script type="text/javascript" src="assets/js/soundmanager2.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/0b2ad89b45.js"></script>
+    <style>
+        .text-gold {
+            color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Player</h1>
+        <div class="row col-md-4 p-2 bg-inverse">
+            <button id="btn-play" type="button" class="btn btn-outline-warning">
+                <i class="fa fa-play-circle text-gold" aria-hidden="true"></i>
+            </button>
+            <span class="ml-3 align-self-center text-gold marquee">O Lola - Cavaleria Rusticana</span>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>
+        var mySound;
+        soundManager.setup({
+            url: 'assets/swf/',
+            multiShot: false,
+            onready: function() {
+                mySound = soundManager.createSound({
+                    id: 'aSound',
+                    url: 'assets/audios/O_Lola.mp3'
+                });
+
+            }
+        });
+        $(function() {
+            $("#btn-play").on('click', function() {
+                mySound.play({
+                    volume: 75
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+</html>

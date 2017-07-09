@@ -1,0 +1,14 @@
+node_modules/soundmanager2/.npmignore
+node_modules/soundmanager2/.eslintrc.js
+node_modules/soundmanager2/license.txt
+node_modules/soundmanager2/package.json
+node_modules/soundmanager2/README.md
+node_modules/soundmanager2/script/soundmanager2-jsmin.js
+node_modules/soundmanager2/script/soundmanager2-nodebug-jsmin.js
+node_modules/soundmanager2/script/soundmanager2-nodebug.js
+node_modules/soundmanager2/script/soundmanager2.js
+node_modules/soundmanager2/swf/soundmanager2_debug.swf
+node_modules/soundmanager2/swf/soundmanager2_flash_xdomain.zip
+node_modules/soundmanager2/swf/soundmanager2_flash9_debug.swf
+node_modules/soundmanager2/swf/soundmanager2_flash9.swf
+node_modules/soundmanager2/swf/soundmanager2.swf

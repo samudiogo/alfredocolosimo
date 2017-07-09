@@ -9,11 +9,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/estilo.css">
     <link rel="stylesheet" href="assets/css/print.css">
+    <link rel="stylesheet" href="assets/css/audio-player.css">
     <script src="https://use.fontawesome.com/0b2ad89b45.js"></script>
     <style>
         @media (min-width: 992px) {
             figure>img {
                 height: 300px !important;
+            }
+            nav.fixed-top {
+                padding-top: 25px;
+            }
+            #bar-player {
+                z-index: 1050;
             }
         }
     </style>
@@ -21,6 +28,19 @@
 </head>
 
 <body>
+    <header id="bar-player" class="fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="text-right align-self-right col-md-12">
+                    <div class="row push-8 col-md-4 p-2 bg-inverse-colosimo">
+                        <button id="btn-play" type="button" class="btn btn-outline-warning">
+                            <i class="fa fa-play-circle text-gold" aria-hidden="true"></i>
+                        </button>
+                        <span class="ml-3 align-self-center text-gold marquee"><strong>O Lola - Cavaleria Rusticana</strong></span>
+                    </div>
+                </div>
+            </div>
+    </header>
     <nav class="navbar container navbar-toggleable-md navbar-inverse bg-inverse-colosimo bg-faded fixed-top">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -88,6 +108,28 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="assets/js/soundmanager2.js"></script>
+    <script>
+        var mySound;
+        soundManager.setup({
+            url: 'assets/swf/',
+            multiShot: false,
+            onready: function() {
+                mySound = soundManager.createSound({
+                    id: 'aSound',
+                    url: 'assets/audios/O_Lola.mp3'
+                });
+
+            }
+        });
+        $(function() {
+            $("#btn-play").on('click', function() {
+                mySound.play({
+                    volume: 75
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
