@@ -89,6 +89,13 @@
         margin-bottom: 20px;
     }
     
+    @media (max-width: 767px) {
+        body {
+            /*min-height: 75rem;*/
+            padding-top: 4.5rem;
+        }
+    }
+    
     @media (min-width: 768px) {
         html {
             position: relative;
@@ -96,10 +103,8 @@
         }
         body {
             /*min-height: 75rem;*/
-            background-color: #222;
-            color: #fff;
             padding-top: 9.5rem;
-            margin-bottom: 100px;
+            margin-bottom: 60px;
         }
         .nav-link {
             font-size: 2.0rem;
@@ -109,8 +114,14 @@
             bottom: 0;
             width: 100%;
             /* Set the fixed height of the footer here */
-            height: 100px;
-            line-height: 100px;
+            height: 60px;
+            line-height: 60px;
             /* Vertically center the text there */
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .bar-player {
+            z-index: 1050;
         }
     }
