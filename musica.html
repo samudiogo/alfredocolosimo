@@ -18,9 +18,15 @@
     <div class="container">
         <h1>Player</h1>
         <div class="row col-md-4 p-2 bg-inverse">
-            <button id="btn-play" type="button" class="btn btn-outline-warning">
-                <i class="fa fa-play-circle text-gold" aria-hidden="true"></i>
+            <div class="btn-group" role="group" aria-label="web player">
+                <button id="btn-play" type="button" class="btn btn-outline-warning">
+                <i id="i-play" class="fa fa-play-circle text-gold" aria-hidden="true"></i>
             </button>
+                <button id="btn-stop" type="button" class="btn btn-outline-warning">
+                <i class="fa fa-stop-circle text-gold" aria-hidden="true"></i>
+            </button>
+
+            </div>
             <span class="ml-3 align-self-center text-gold marquee">O Lola - Cavaleria Rusticana</span>
         </div>
     </div>
@@ -40,15 +46,29 @@
         });
         $(function() {
             $("#btn-play").on('click', function() {
-                mySound.play({
-                    volume: 75
-                });
+
+                if (mySound.playState == 1) {
+                    mySound.togglePause();
+                } else {
+                    mySound.play({
+                        volume: 75
+                    });
+                }
+                toogleBtn();
             });
+
+            $("#btn-stop").on('click', function() {
+                mySound.stop();
+                if ($("#i-play").hasClass('fa-pause-circle'))
+                    toogleBtn();
+            });
+
+            function toogleBtn() {
+                $("#i-play").toggleClass("fa-play-circle, fa-pause-circle");
+            }
         });
     </script>
 
 </body>
-
-</html>
 
 </html>
