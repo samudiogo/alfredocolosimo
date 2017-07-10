@@ -119,3 +119,9 @@
             /* Vertically center the text there */
         }
     }
+    
+    @media (min-width: 992px) {
+        .bar-player {
+            z-index: 1050;
+        }
+    }

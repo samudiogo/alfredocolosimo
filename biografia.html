@@ -13,13 +13,31 @@
 </head>
 
 <body>
+    <header class="fixed-top hidden-md-down bar-player">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row col-md-4 pt-2 push-md-8  bg-inverse-colosimo">
+                        <div class="btn-group" role="group" aria-label="web player">
+                            <button id="btn-play" type="button" class="btn btn-outline-warning">
+                            <i id="i-play" class="fa fa-play-circle text-gold" aria-hidden="true"></i>
+                            </button>
+                            <button id="btn-stop" type="button" class="btn btn-outline-warning">
+                                <i class="fa fa-stop-circle text-gold" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <span class="ml-3 align-self-center text-gold marquee">E lucevan le stelle - Tosca</span>
+                    </div>
+                </div>
+            </div>
+    </header>
     <nav class="navbar container navbar-toggleable-md navbar-inverse bg-inverse-colosimo bg-faded fixed-top">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         <a class="navbar-brand" href="#">
             <img src="assets/images/12.png" alt="" class="logotipo img-fluid hidden-print hidden-sm-down">
-            <span class="show-sm-down hidden-sm-up">Alfredo Cololosimo, Tenor</span>
+            <span class="show-sm-down hidden-sm-up">Alfredo Cololosimo</span>
         </a>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
@@ -253,10 +271,9 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-center"><span class="">Alfredo Colosimo &copy 2017</span> - website made by
-                    <a href="http://www.sdtech.com.br/" class="btn btn-link"> Samuel Diogo</a>
+                <div class="col-md-10 text-center"><span class="">Alfredo Colosimo &copy 2017</span>
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="col-md-2 text-center">
                     <h5>Redes sociais:<br>
                         <small>
                             <a href="https://www.facebook.com/tenor.alfredo.colosimo/" target="new"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
@@ -270,6 +287,50 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="assets/js/soundmanager2.js"></script>
+    <script>
+        var mySound;
+        soundManager.setup({
+            url: 'assets/swf/',
+            multiShot: false,
+            onready: function() {
+                mySound = soundManager.createSound({
+                    id: 'aSound',
+                    url: 'assets/audios/E_lucevan_le_stelle.mp3'
+                });
+                playMusica();
+
+            }
+        });
+
+        function playMusica() {
+            if (mySound.playState == 1) {
+                mySound.togglePause();
+            } else {
+                mySound.play({
+                    volume: 75
+                });
+            }
+            toogleBtn();
+        }
+
+        function toogleBtn() {
+            $("#i-play").toggleClass("fa-play-circle, fa-pause-circle");
+        }
+
+        $(function() {
+            $("#btn-play").on('click', function() {
+                playMusica();
+            });
+
+            $("#btn-stop").on('click', function() {
+                mySound.stop();
+                if ($("#i-play").hasClass('fa-pause-circle'))
+                    toogleBtn();
+            });
+
+        });
+    </script>
 </body>
 
 </html>
