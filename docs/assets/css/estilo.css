@@ -1,127 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Raleway|Quicksand');
+body {
+    /*min-height: 75rem;*/
+    background-color: #222;
+    color: #fff;
+}
+
+.footer {
+    background-color: #e4d6ac;
+    color: #333;
+}
+
+.navbar {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    color: #CC9900;
+}
+
+.navbar-inverse .navbar-nav .active>.nav-link,
+.navbar-inverse .navbar-nav .nav-link.active,
+.navbar-inverse .navbar-nav .nav-link.open,
+.navbar-inverse .navbar-nav .open>.nav-link,
+.active {
+    color: #CC9900;
+}
+
+.active:hover {
+    color: #FFF;
+    /*text-decoration: underline;*/
+    font-weight: bolder;
+}
+
+.nav-link.text-white:hover {
+    color: #CC9900 !important;
+    /*text-decoration: underline;*/
+    font-weight: bolder;
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+
+/* topo menu**/
+
+.logotipo {
+    width: 273px;
+    height: auto;
+}
+
+.bg-inverse-colosimo {
+    background-color: #222;
+}
+
+.masthead {
+    margin-bottom: 2rem;
+}
+
+.masthead-brand {
+    margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: bold;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link+.nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+
+/************/
+
+.img-miniatura {
+    max-width: 124px;
+    height: auto;
+}
+
+li.media {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
     body {
         /*min-height: 75rem;*/
-        background-color: #222;
-        color: #fff;
+        padding-top: 4.5rem;
     }
-    
+}
+
+@media (min-width: 768px) {
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    body {
+        /*min-height: 75rem;*/
+        padding-top: 9.5rem;
+        margin-bottom: 60px;
+    }
+    .nav-link {
+        font-size: 2.0rem;
+    }
     .footer {
-        background-color: #e4d6ac;
-        color: #333;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 60px;
+        line-height: 60px;
+        /* Vertically center the text there */
     }
-    
-    h1,
-    h2,
-    h3 {
-        font-family: 'Josefin Sans', sans-serif;
-        color: #CC9900;
-        text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+    .bar-player {
+        z-index: 1050;
     }
-    
-    .navbar-inverse .navbar-nav .active>.nav-link,
-    .navbar-inverse .navbar-nav .nav-link.active,
-    .navbar-inverse .navbar-nav .nav-link.open,
-    .navbar-inverse .navbar-nav .open>.nav-link,
-    .active {
-        color: #CC9900;
-    }
-    
-    .active:hover {
-        color: #FFF;
-        text-decoration: underline;
-    }
-    
-    .nav-link.text-white:hover {
-        color: #CC9900 !important;
-        text-decoration: underline;
-    }
-    
-    .card {
-        margin-bottom: 15px;
-    }
-    /* topo menu**/
-    
-    .logotipo {
-        width: 273px;
-        height: auto;
-    }
-    
-    .bg-inverse-colosimo {
-        background-color: #222;
-    }
-    
-    .masthead {
-        margin-bottom: 2rem;
-    }
-    
-    .masthead-brand {
-        margin-bottom: 0;
-    }
-    
-    .nav-masthead .nav-link {
-        padding: .25rem 0;
-        font-weight: bold;
-        color: rgba(255, 255, 255, .5);
-        background-color: transparent;
-        border-bottom: .25rem solid transparent;
-    }
-    
-    .nav-masthead .nav-link:hover,
-    .nav-masthead .nav-link:focus {
-        border-bottom-color: rgba(255, 255, 255, .25);
-    }
-    
-    .nav-masthead .nav-link+.nav-link {
-        margin-left: 1rem;
-    }
-    
-    .nav-masthead .active {
-        color: #fff;
-        border-bottom-color: #fff;
-    }
-    /************/
-    
-    .img-miniatura {
-        max-width: 124px;
-        height: auto;
-    }
-    
-    li.media {
-        margin-bottom: 20px;
-    }
-    
-    @media (max-width: 767px) {
-        body {
-            /*min-height: 75rem;*/
-            padding-top: 4.5rem;
-        }
-    }
-    
-    @media (min-width: 768px) {
-        html {
-            position: relative;
-            min-height: 100%;
-        }
-        body {
-            /*min-height: 75rem;*/
-            padding-top: 9.5rem;
-            margin-bottom: 60px;
-        }
-        .nav-link {
-            font-size: 2.0rem;
-        }
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            /* Set the fixed height of the footer here */
-            height: 60px;
-            line-height: 60px;
-            /* Vertically center the text there */
-        }
-    }
-    
-    @media (min-width: 992px) {
-        .bar-player {
-            z-index: 1050;
-        }
-    }
+}
