@@ -20,9 +20,27 @@
             background-color: transparent;
         }
         
+        .list-group.hover>.list-group-item:hover {
+            background-color: #404040 !important;
+        }
+        
         .playlist-size {
             max-height: 500px;
             overflow: auto;
+        }
+        
+        .experimento {
+            border-radius: 10px;
+            box-shadow: 0px 2px 13px #000000;
+        }
+        
+        .amplitude-playing>div>i.fa-play-circle:before,
+        .amplitude-playing>i.fa-play-circle:before {
+            content: '\f28b';
+        }
+        
+        .amplitude-playing>div>i.fa-play-circle:before {
+            color: #f0ad4e !important;
         }
     </style>
 </head>
@@ -55,97 +73,102 @@
     </nav>
     <div class="container">
         <h1>Clipes</h1>
-        <p>Para ouvir trechos de Alfredo Colosimo, clique nas imagens</p>
+        <p>Ouça trechos das interpretações de Alfredo Colosimo!</p>
         <div class="row">
-            <div class="col-md-3 mr-md-2 card card-outline-warning">
-                <img class="img-cover-art mt-3 mb-3 img-thumbnail" amplitude-song-info="cover_art_url" amplitude-main-song-info="true" src="assets/images/16.jpg" />
+            <div class="col-md-8 offset-md-1">
+                <div class="experimento d-md-flex justify-content-around pt-md-2">
+                    <div class="player px-4 col-sm-auto card card-outline-warning">
+                        <img class="img-cover-art mt-3 mb-3 img-thumbnail" amplitude-song-info="cover_art_url" amplitude-main-song-info="true" src="assets/images/16.jpg" />
 
-                <div class="align-content-center">
+                        <div class="align-content-center">
 
-                    <div class="text-center mb-2">
-                        <div class="btn-group " role="group" aria-label="controller">
-                            <button type="button" class="btn btn-outline-warning amplitude-prev" id="previous">
+                            <div class="text-center mb-2">
+                                <div class="btn-group " role="group" aria-label="controller">
+                                    <button type="button" class="btn btn-outline-warning amplitude-prev" id="previous">
                                 <i id="i-play" class="fa fa-step-backward text-gold fa-2x" aria-hidden="true"></i>
                             </button>
-                            <button type="button" amplitude-main-play-pause="true" class="btn btn-outline-warning amplitude-play-pause" id="play-pause">
+                                    <button type="button" amplitude-main-play-pause="true" class="btn btn-outline-warning amplitude-play-pause" id="play-pause">
                                 <i id="i-play" class="fa fa-play-circle text-gold fa-2x" aria-hidden="true"></i>
                             </button>
-                            <button type="button" class="btn btn-outline-warning amplitude-next" id="next">
+                                    <button type="button" class="btn btn-outline-warning amplitude-next" id="next">
                                 <i id="i-play" class="fa fa-step-forward text-gold fa-2x" aria-hidden="true"></i>
                             </button>
-                        </div>
+                                </div>
 
-                    </div>
-                    <div class="text-center mb-1">
-                        <span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name lead"></span>
-                        <div class="song-artist-album lead ">
-                            <strong><span amplitude-song-info="artist" amplitude-main-song-info="true"></span></strong>
+                            </div>
+                            <div class="text-center mb-1">
+                                <span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name lead"></span>
+                                <div class="song-artist-album lead ">
+                                    <strong><span amplitude-song-info="artist" amplitude-main-song-info="true"></span></strong>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 playlist-size">
-                <div class="list-group">
+                    <div class="playlist-size p-md-3 col-sm-auto card card-outline-warning">
+                        <div class="list-group hover">
 
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="0">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Tosca - E lucevan le stelle </div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="1">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Rigoletto - Bella figlia </div>
-                    </div>
-                    <div class=" list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="2">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Pagliacci - No pagliaccio </div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="3">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Pagliacci - a 23 ore </div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="4">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Tosca - Qual'occhio</div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="5">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Cavalleria - O Lola</div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="6">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Tosca - La vita mi costasse</div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="7">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Lo schiavo - Quando nascesti</div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="8">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Zazà - Mio piccolo tavolo</div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="9">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Andrea Chenier - Improvviso</div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="10">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Lo Schiavo - Final</div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="11">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Pagliacci - Ridi Pagliaccio</div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="12">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Trovatore - Mal reggendo</div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="13">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">La Bohème - Che gelida manina</div>
-                    </div>
-                    <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="14">
-                        <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                        <div class="col-10">Tosca - O dolci mani</div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="0">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Tosca - E lucevan le stelle </div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="1">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Rigoletto - Bella figlia </div>
+                            </div>
+                            <div class=" list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="2">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Pagliacci - No pagliaccio </div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="3">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Pagliacci - a 23 ore </div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="4">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Tosca - Qual'occhio</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="5">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Cavalleria - O Lola</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="6">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Tosca - La vita mi costasse</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="7">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Lo schiavo - Quando nascesti</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="8">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Zazà - Mio piccolo tavolo</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="9">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Andrea Chenier - Improvviso</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="10">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Lo Schiavo - Final</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="11">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Pagliacci - Ridi Pagliaccio</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="12">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Trovatore - Mal reggendo</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="13">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">La Bohème - Che gelida manina</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="14">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Tosca - O dolci mani</div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,7 +181,7 @@
             <div class="row">
                 <div class="col-md-6 text-center"><span class="">Alfredo Colosimo &copy 2017</span>
                 </div>
-                <div class="col-md-6 text-right">
+                <div class="col-md-6 text-center text-md-right">
                     <h5 class="pt-2">
 
                         <a href="https://www.facebook.com/tenor.alfredo.colosimo/" target="new"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>

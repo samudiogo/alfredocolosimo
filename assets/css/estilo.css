@@ -10,10 +10,6 @@ body {
     color: #333;
 }
 
-.navbar {
-    font-family: 'Quicksand', sans-serif;
-}
-
 h1,
 h2,
 h3,
@@ -26,7 +22,11 @@ h6 {
 h1,
 h2,
 h3 {
-    color: #CC9900;
+    color: #f0ad4e;
+}
+
+.navbar {
+    font-family: 'Quicksand', sans-serif;
 }
 
 .navbar-inverse .navbar-nav .active>.nav-link,
@@ -34,23 +34,31 @@ h3 {
 .navbar-inverse .navbar-nav .nav-link.open,
 .navbar-inverse .navbar-nav .open>.nav-link,
 .active {
-    color: #CC9900;
+    color: #f0ad4e;
 }
 
 .active:hover {
     color: #FFF;
-    /*text-decoration: underline;*/
     font-weight: bolder;
 }
 
 .nav-link.text-white:hover {
-    color: #CC9900 !important;
-    /*text-decoration: underline;*/
+    color: #f0ad4e !important;
     font-weight: bolder;
 }
 
 .card {
     margin-bottom: 15px;
+}
+
+.figure {
+    display: table;
+}
+
+.figure-caption {
+    display: table-caption;
+    caption-side: bottom;
+    color: #FFF;
 }
 
 
@@ -95,6 +103,15 @@ h3 {
     border-bottom-color: #fff;
 }
 
+.bg-transparent>.list-group-item {
+    background-color: transparent;
+}
+
+.bg-transparent.list-group.hover>.list-group-item:focus,
+.bg-transparent.list-group.hover>.list-group-item:hover {
+    background-color: #404040 !important;
+}
+
 
 /************/
 
@@ -125,7 +142,7 @@ li.media {
         margin-bottom: 60px;
     }
     .nav-link {
-        font-size: 2.0rem;
+        font-size: 1.8rem;
     }
     .footer {
         position: absolute;

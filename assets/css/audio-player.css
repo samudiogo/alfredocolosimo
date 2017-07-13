@@ -10,3 +10,25 @@
 .sm2-bar-ui .sm2-inline-texture {
     background: transparent;
 }
+
+
+/*****/
+
+.playlist-max-height-size {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.bg-player {
+    border-radius: 10px;
+    box-shadow: 0px 2px 13px #000000;
+}
+
+.amplitude-playing>div>i.fa-play-circle:before,
+.amplitude-playing>i.fa-play-circle:before {
+    content: '\f28b';
+}
+
+.amplitude-playing>div>i.fa-play-circle:before {
+    color: #f0ad4e !important;
+}
