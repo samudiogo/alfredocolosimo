@@ -1,259 +1,274 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Alfredo Colosimo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/estilo.css">
-    <link rel="stylesheet" href="assets/css/print.css">
-    <link rel="stylesheet" href="assets/css/audio-player.css">
-    <script src="https://use.fontawesome.com/0b2ad89b45.js"></script>
-    <script type="text/javascript" src="assets/js/amplitude.js"></script>
-    <style>
-        .img-cover-art {
-            min-width: 250px;
-        }
-    </style>
-</head>
-
-<body>
-    <nav class="navbar container navbar-toggleable-md navbar-inverse bg-inverse-colosimo bg-faded fixed-top">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/12.png" alt="" class="logotipo img-fluid hidden-print hidden-sm-down">
-            <span class="show-sm-down hidden-sm-up">Alfredo Cololosimo</span>
-        </a>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="biografia.html">Biografia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="discografia.html">Discografia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="clipes.html">Clipes</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <h1>Clipes</h1>
-        <p>Ouça trechos das interpretações de Alfredo Colosimo!</p>
-        <div class="row">
-            <div class="col-md-8 offset-md-1">
-                <div class="bg-player d-md-flex justify-content-around pt-md-2">
-                    <div class="player px-4 col-sm-auto card card-outline-warning">
-                        <img class="img-cover-art mt-3 mb-3 img-thumbnail" amplitude-song-info="cover_art_url" amplitude-main-song-info="true" src="assets/images/16.jpg" />
-
-                        <div class="align-content-center">
-
-                            <div class="text-center mb-2">
-                                <div class="btn-group " role="group" aria-label="controller">
-                                    <button type="button" class="btn btn-outline-warning amplitude-prev" id="previous">
-                                <i id="i-play" class="fa fa-step-backward text-gold fa-2x" aria-hidden="true"></i>
-                            </button>
-                                    <button type="button" amplitude-main-play-pause="true" class="btn btn-outline-warning amplitude-play-pause" id="play-pause">
-                                <i id="i-play" class="fa fa-play-circle text-gold fa-2x" aria-hidden="true"></i>
-                            </button>
-                                    <button type="button" class="btn btn-outline-warning amplitude-next" id="next">
-                                <i id="i-play" class="fa fa-step-forward text-gold fa-2x" aria-hidden="true"></i>
-                            </button>
-                                </div>
-
-                            </div>
-                            <div class="text-center mb-1">
-                                <span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name lead"></span>
-                                <div class="song-artist-album lead ">
-                                    <strong><span amplitude-song-info="artist" amplitude-main-song-info="true"></span></strong>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="playlist-max-height-size p-md-3 col-sm-auto card card-outline-warning">
-                        <div class="list-group hover bg-transparent">
-
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause align-middle" amplitude-song-index="0">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Tosca - E lucevan le stelle </div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="1">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Rigoletto - Bella figlia </div>
-                            </div>
-                            <div class=" list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="2">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Pagliacci - No pagliaccio </div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="3">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Pagliacci - a 23 ore </div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="4">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Tosca - Qual'occhio</div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="5">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Cavalleria - O Lola</div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="6">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Tosca - La vita mi costasse</div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="7">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Lo schiavo - Quando nascesti</div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="8">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Zazà - Mio piccolo tavolo</div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="9">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Andrea Chenier - Improvviso</div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="10">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Lo Schiavo - Final</div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="11">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Pagliacci - Ridi Pagliaccio</div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="12">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Trovatore - Mal reggendo</div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="13">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">La Bohème - Che gelida manina</div>
-                            </div>
-                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="14">
-                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
-                                <div class="col-10">Tosca - O dolci mani</div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <hr>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center"><span class="">Alfredo Colosimo &copy 2017</span>
-                </div>
-                <div class="col-md-6 text-center text-md-right">
-                    <h5 class="pt-2">
-
-                        <a href="https://www.facebook.com/tenor.alfredo.colosimo/" target="new"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com/user/maria2009maria" target="new"><i class="fa fa-youtube-square fa-2x text-danger" aria-hidden="true"></i></a>
-
-                    </h5>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.js"></script>
-    <script>
-        Amplitude.init({
-            "songs": [{
-                "name": "Tosca - E lucevan le stelle",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/1.mp3",
-                "cover_art_url": "assets/images/16.jpg"
-            }, {
-                "name": "Rigoletto - Bella figlia",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/2.mp3",
-                "cover_art_url": "assets/images/20.jpg"
-            }, {
-                "name": "Pagliacci - No pagliaccio",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/3.mp3",
-                "cover_art_url": "assets/images/23.jpg"
-            }, {
-                "name": "Pagliacci - a 23 ore",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/4.mp3",
-                "cover_art_url": "assets/images/26.jpg"
-            }, {
-                "name": "Tosca - Qual'occhio",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/5.mp3",
-                "cover_art_url": "assets/images/29.jpg"
-            }, {
-                "name": "Cavalleria - O Lola",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/6.mp3",
-                "cover_art_url": "assets/images/32.jpg"
-            }, {
-                "name": "Tosca - La vita mi costasse",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/7.mp3",
-                "cover_art_url": "assets/images/35.jpg"
-            }, {
-                "name": "Lo schiavo - Quando nascesti",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/8.mp3",
-                "cover_art_url": "assets/images/38.jpg"
-            }, {
-                "name": "Zazà - Mio piccolo tavolo",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/9.mp3",
-                "cover_art_url": "assets/images/41.jpg"
-            }, {
-                "name": "Andrea Chenier - Improvviso",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/10.mp3",
-                "cover_art_url": "assets/images/44.jpg"
-            }, {
-                "name": "Lo Schiavo - Final",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/11.mp3",
-                "cover_art_url": "assets/images/47.jpg"
-            }, {
-                "name": "Pagliacci - Ridi Pagliaccio",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/12.mp3",
-                "cover_art_url": "assets/images/50.jpg"
-            }, {
-                "name": "Trovatore - Mal reggendo",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/13.mp3",
-                "cover_art_url": "assets/images/53.jpg"
-            }, {
-                "name": "La Bohème - Che gelida manina",
-                "artist": "Alfredo Colosimo & Ida Miccoles",
-                "url": "assets/audios/clipes/14.mp3",
-                "cover_art_url": "assets/images/56.jpg"
-            }, {
-                "name": "Tosca - O dolci mani",
-                "artist": "Alfredo Colosimo",
-                "url": "assets/audios/clipes/15.mp3",
-                "cover_art_url": "assets/images/59.jpg"
-            }]
-        });
-
-        $(function() {
-
-        });
-    </script>
-</body>
-
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Alfredo Colosimo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="assets/css/print.css">
+    <link rel="stylesheet" href="assets/css/audio-player.css">
+    <script src="https://use.fontawesome.com/0b2ad89b45.js"></script>
+    <script type="text/javascript" src="assets/js/amplitude.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48998844-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-48998844-1');
+    </script>
+    <style>
+        .img-cover-art {
+            min-width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar container navbar-toggleable-md navbar-inverse bg-inverse-colosimo bg-faded fixed-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/12.png" alt="" class="logotipo img-fluid hidden-print hidden-sm-down">
+            <span class="show-sm-down hidden-sm-up">Alfredo Cololosimo</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="biografia.html">Biografia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="discografia.html">Discografia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="clipes.html">Clipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="links.html">Links</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Clipes</h1>
+        <p>Ouça trechos das interpretações de Alfredo Colosimo!</p>
+        <div class="row">
+            <div class="col-md-8 offset-md-1">
+                <div class="bg-player d-md-flex justify-content-around pt-md-2">
+                    <div class="player px-4 col-sm-auto card card-outline-warning">
+                        <img class="img-cover-art mt-3 mb-3 img-thumbnail" amplitude-song-info="cover_art_url" amplitude-main-song-info="true" src="assets/images/16.jpg" />
+
+                        <div class="align-content-center">
+
+                            <div class="text-center mb-2">
+                                <div class="btn-group " role="group" aria-label="controller">
+                                    <button type="button" class="btn btn-outline-warning amplitude-prev" id="previous">
+                                <i id="i-play" class="fa fa-step-backward text-gold fa-2x" aria-hidden="true"></i>
+                            </button>
+                                    <button type="button" amplitude-main-play-pause="true" class="btn btn-outline-warning amplitude-play-pause" id="play-pause">
+                                <i id="i-play" class="fa fa-play-circle text-gold fa-2x" aria-hidden="true"></i>
+                            </button>
+                                    <button type="button" class="btn btn-outline-warning amplitude-next" id="next">
+                                <i id="i-play" class="fa fa-step-forward text-gold fa-2x" aria-hidden="true"></i>
+                            </button>
+                                </div>
+
+                            </div>
+                            <div class="text-center mb-1">
+                                <span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name lead"></span>
+                                <div class="song-artist-album lead ">
+                                    <strong><span amplitude-song-info="artist" amplitude-main-song-info="true"></span></strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist-max-height-size p-md-3 col-sm-auto card card-outline-warning">
+                        <div class="list-group hover bg-transparent">
+
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause align-middle" amplitude-song-index="0">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Tosca - E lucevan le stelle </div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="1">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Rigoletto - Bella figlia </div>
+                            </div>
+                            <div class=" list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="2">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Pagliacci - No pagliaccio </div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="3">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Pagliacci - a 23 ore </div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="4">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Tosca - Qual'occhio</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="5">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Cavalleria - O Lola</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="6">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Tosca - La vita mi costasse</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="7">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Lo schiavo - Quando nascesti</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="8">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Zazà - Mio piccolo tavolo</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="9">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Andrea Chenier - Improvviso</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="10">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Lo Schiavo - Final</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="11">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Pagliacci - Ridi Pagliaccio</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="12">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Trovatore - Mal reggendo</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="13">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">La Bohème - Che gelida manina</div>
+                            </div>
+                            <div class="list-group-item song amplitude-song-container amplitude-play-pause" amplitude-song-index="14">
+                                <div class="col-2"><i class="fa fa-play-circle text-gold" aria-hidden="true"></i></div>
+                                <div class="col-10">Tosca - O dolci mani</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center"><span class="">Alfredo Colosimo &copy 2017</span>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <h5 class="pt-2">
+
+                        <a href="https://www.facebook.com/tenor.alfredo.colosimo/" target="new"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/user/maria2009maria" target="new"><i class="fa fa-youtube-square fa-2x text-danger" aria-hidden="true"></i></a>
+
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.js"></script>
+    <script>
+        Amplitude.init({
+            "songs": [{
+                "name": "Tosca - E lucevan le stelle",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/1.mp3",
+                "cover_art_url": "assets/images/16.jpg"
+            }, {
+                "name": "Rigoletto - Bella figlia",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/2.mp3",
+                "cover_art_url": "assets/images/20.jpg"
+            }, {
+                "name": "Pagliacci - No pagliaccio",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/3.mp3",
+                "cover_art_url": "assets/images/23.jpg"
+            }, {
+                "name": "Pagliacci - a 23 ore",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/4.mp3",
+                "cover_art_url": "assets/images/26.jpg"
+            }, {
+                "name": "Tosca - Qual'occhio",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/5.mp3",
+                "cover_art_url": "assets/images/29.jpg"
+            }, {
+                "name": "Cavalleria - O Lola",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/6.mp3",
+                "cover_art_url": "assets/images/32.jpg"
+            }, {
+                "name": "Tosca - La vita mi costasse",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/7.mp3",
+                "cover_art_url": "assets/images/35.jpg"
+            }, {
+                "name": "Lo schiavo - Quando nascesti",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/8.mp3",
+                "cover_art_url": "assets/images/38.jpg"
+            }, {
+                "name": "Zazà - Mio piccolo tavolo",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/9.mp3",
+                "cover_art_url": "assets/images/41.jpg"
+            }, {
+                "name": "Andrea Chenier - Improvviso",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/10.mp3",
+                "cover_art_url": "assets/images/44.jpg"
+            }, {
+                "name": "Lo Schiavo - Final",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/11.mp3",
+                "cover_art_url": "assets/images/47.jpg"
+            }, {
+                "name": "Pagliacci - Ridi Pagliaccio",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/12.mp3",
+                "cover_art_url": "assets/images/50.jpg"
+            }, {
+                "name": "Trovatore - Mal reggendo",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/13.mp3",
+                "cover_art_url": "assets/images/53.jpg"
+            }, {
+                "name": "La Bohème - Che gelida manina",
+                "artist": "Alfredo Colosimo & Ida Miccolis",
+                "url": "assets/audios/clipes/14.mp3",
+                "cover_art_url": "assets/images/56.jpg"
+            }, {
+                "name": "Tosca - O dolci mani",
+                "artist": "Alfredo Colosimo",
+                "url": "assets/audios/clipes/15.mp3",
+                "cover_art_url": "assets/images/59.jpg"
+            }]
+        });
+
+        $(function() {
+
+        });
+    </script>
+</body>
+
 </html>
